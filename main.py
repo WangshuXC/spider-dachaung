@@ -72,7 +72,6 @@ def spider(url):
 
 if __name__ == "__main__":
     driver = webdriver.Chrome()
-    # time.sleep(4)
     data = []
 
     url1 = "http://sj.tjj.ordos.gov.cn/datashow/quick/QuickShowAct.htm?cn=B0107&quickCode=HGND&treeCode=5fe98d958fe042de9035cb08cb8de697&defaultTime="
@@ -113,7 +112,7 @@ if __name__ == "__main__":
     ]
     name4 = "年末就业人员及城镇非私营单位就业人员平均工资"
 
-    spider(url4)
-    data2xlsx(name4, title4, data)
+    # spider(url4)
+    # data2xlsx(name4, title4, data)
 
     driver.quit()
